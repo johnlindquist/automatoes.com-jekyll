@@ -10,10 +10,13 @@ layout: default
 
 {{ content }}
 
-
 <script type="text/javascript">
   // Hack: Replace page-link with "Page Title"
   document.querySelectorAll(".markdown-body a[title]").forEach((a) => {
     a.innerText = a.title;
   });
 </script>
+
+<footer>
+  <a href="{{site.github.repository_url}}/blob/gh-pages/{{page.path}}">Edit this page</a>
+</footer>
